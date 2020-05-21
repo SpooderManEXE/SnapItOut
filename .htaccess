@@ -1,0 +1,2 @@
+<ifModule mod_gzip.c>
+</ifModule>

@@ -4,7 +4,6 @@ require('pconfig.php');
 
 session_start();
 require_once "config.php";
-      $connect = mysqli_connect("localhost", "1110776", "Cartoons001", "1110776");
 require('razorpay-php/Razorpay.php');
 use Razorpay\Api\Api;
 use Razorpay\Api\Errors\SignatureVerificationError;

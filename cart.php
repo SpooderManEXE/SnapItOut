@@ -11,7 +11,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     exit;
 }
 else {
-  $connect = mysqli_connect("localhost", "1110776", "Cartoons001", "1110776");
+  
   $t_product='cart'.$_SESSION['id'];
   $query=" CREATE TABLE IF NOT EXISTS `$t_product` (
 `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -22,7 +22,7 @@ PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;";
 $result = mysqli_query($connect, $query);
 }
-$connect = mysqli_connect("localhost", "1110776", "Cartoons001", "1110776");
+
 
 
 
@@ -246,7 +246,7 @@ if(isset($_GET["action"]))
       }
 
       $_SESSION['promo']=$code;
-      $connect = mysqli_connect("localhost", "1110776", "Cartoons001", "1110776");
+      
       $t_product='cart'.$_SESSION['id'];
     $query = "SELECT * FROM promo where code='$code'";
     $result = mysqli_query($connect, $query);

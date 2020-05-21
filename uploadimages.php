@@ -6,7 +6,7 @@
 session_start();
 $imgcnt=0;
 include "iconfig.php";
-$connect = mysqli_connect("localhost", "1110776", "Cartoons001", "1110776");
+
 // Check if the user is logged in, if not then redirect him to login page
 if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     header("location: login.php");

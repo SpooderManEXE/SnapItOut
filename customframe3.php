@@ -214,7 +214,7 @@ require_once "config.php";
                                 </form>
 
                                 <?php
-            $connect = mysqli_connect("localhost", "1110776", "Cartoons001", "1110776");
+            
                                 if(isset($_POST["submit"])) {
                                   $t_product='cart'.$_SESSION['id'];
                                   $query = "SELECT * FROM $t_product where id=213";
